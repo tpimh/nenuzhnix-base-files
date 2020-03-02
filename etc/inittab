@@ -1,0 +1,3 @@
+::sysinit:mount proc /proc -t proc
+::sysinit:sysctl -p
+::respawn:/sbin/getty -l /bin/autologin -n -L ttyS0 115200 vt100
